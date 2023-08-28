@@ -1,10 +1,22 @@
-import React, { type InputHTMLAttributes } from "react";
+import React, { useLayoutEffect, type InputHTMLAttributes } from "react";
 
 type Props = InputHTMLAttributes<HTMLInputElement>;
 
-// TODO: style range input
-
 export default function CharRange({ ...props }: Props) {
+  const inputRef = React.useRef<HTMLInputElement>(null);
+
+  useLayoutEffect(() => {
+    const input = inputRef.current;
+
+    if (!input) return;
+
+    const { min, max, value } = input;
+
+    let percent = ((+value - +min) * 100) / (+max - +min);
+
+    input.style.backgroundSize = `${percent}% 100%`;
+  }, [props.value]);
+
   return (
     <>
       <div className="flex items-center justify-between">
@@ -14,7 +26,8 @@ export default function CharRange({ ...props }: Props) {
       <input
         {...props}
         type="range"
-        className="w-full mt-5"
+        ref={inputRef}
+        className="w-full mt-5 h-2 cursor-pointer appearance-none"
         step="1"
         min="1"
         max="20"
