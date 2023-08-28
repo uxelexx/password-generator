@@ -7,7 +7,7 @@ type Props = ButtonHTMLAttributes<HTMLButtonElement> & {
 export default function GeneratorButton({ children, ...props }: Props) {
   return (
     <button
-      className="uppercase text-teal-300 text-lg w-full p-5 flex items-center justify-center border-teal-300 border-2"
+      className="uppercase hover:text-primary text-lg w-full p-5 flex items-center justify-center hover:border-primary border-2 font-semibold duration-150 ease-out"
       {...props}
       type="button"
     >
