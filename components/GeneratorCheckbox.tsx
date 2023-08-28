@@ -6,7 +6,7 @@ type Props = InputHTMLAttributes<HTMLInputElement> & {
 
 export default function GeneratorCheckbox({ children, ...props }: Props) {
   return (
-    <div className="flex space-x-5 items-center relative">
+    <div className="flex space-x-5 items-center relative mb-5">
       <div className="grid place-items-center">
         <input
           id={props.name}
