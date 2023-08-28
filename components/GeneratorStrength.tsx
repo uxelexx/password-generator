@@ -10,7 +10,7 @@ export default function GeneratorStrength({ password }: Props) {
 
   return (
     <div className="uppercase w-full flex justify-between items-center p-6 bg-slate-950/60">
-      <p className="text-lg text-neutral-300 text-opacity-70">Strength</p>
+      <p className="text-lg text-neutral-200 text-opacity-70">Strength</p>
       <span className={`text-${strength.color}-400 text-2xl font-semibold`}>
         {strength.value}
       </span>

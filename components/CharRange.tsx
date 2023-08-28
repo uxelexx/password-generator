@@ -8,8 +8,8 @@ export default function CharRange({ ...props }: Props) {
   return (
     <>
       <div className="flex items-center justify-between">
-        <h3 className="text-lg capitalize">Character length</h3>
-        <span className="text-teal-400 font-bold text-3xl">{props.value}</span>
+        <h3 className="text-lg capitalize font-semibold">Character length</h3>
+        <span className="text-primary font-bold text-3xl">{props.value}</span>
       </div>
       <input
         {...props}

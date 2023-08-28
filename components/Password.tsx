@@ -23,7 +23,7 @@ export default function Password({ password }: PasswordProps) {
   }
 
   return (
-    <div className="text-neural-300 relative p-6 bg-zinc-700/80 w-full flex justify-between items-center">
+    <div className="text-neutral-200 relative p-6 bg-zinc-700/80 w-full flex justify-between items-center">
       <span
         ref={ref}
         className="text-emerald-300 absolute right-0 -top-6 hidden duration-150 ease-out"
@@ -33,7 +33,7 @@ export default function Password({ password }: PasswordProps) {
       <p className="font-semibold text-2xl focus:text-rose-500">{password}</p>
       <button
         type="button"
-        className="cursor-pointer text-neutral-300 text-opacity-70 hover:text-opacity-100 active:scale-95"
+        className="cursor-pointer text-neutral-200 text-opacity-70 hover:text-opacity-100 active:scale-95"
         onClick={handleCopy}
       >
         <CopyIcon />

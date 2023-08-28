@@ -23,17 +23,17 @@ export default function GenHeader({ password }: PasswordProps) {
   }
 
   return (
-    <div className="text-neural-300 relative p-6 h-20 bg-zinc-700/80 w-full flex justify-between items-center">
+    <div className="text-neural-200 relative p-6 h-20 bg-zinc-700/80 w-full flex justify-between items-center">
       <span
         ref={ref}
-        className="text-emerald-300 absolute right-0 -top-6 hidden duration-150 ease-out"
+        className="text-primary absolute right-0 -top-6 hidden duration-150 ease-out"
       >
         Copied!
       </span>
-      <p className="font-semibold text-2xl focus:text-rose-500">{password}</p>
+      <p className="font-semibold text-2xl">{password}</p>
       <button
         type="button"
-        className="cursor-pointer text-neutral-300 text-opacity-70 hover:text-opacity-100 active:scale-95"
+        className="cursor-pointer text-neutral-200 text-opacity-70 hover:text-opacity-100 active:scale-95"
         onClick={handleCopy}
       >
         <CopyIcon />
