@@ -16,7 +16,7 @@ export default function CharRange({ ...props }: Props) {
         type="range"
         className="w-full mt-5"
         step="1"
-        min="6"
+        min="1"
         max="20"
       />
     </>
