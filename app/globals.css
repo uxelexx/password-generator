@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 2rem;
+    height: 2rem;
+    border: 2px solid #a4ffaf;
+    @apply bg-bg-start rounded-full;
+  }
+
+  input[type="range"] {
+    @apply bg-bg-start;
+    background-image: linear-gradient(#a4ffaf, #a4ffaf);
+    background-size: 30% 100%;
+    background-repeat: no-repeat;
+  }
+}
