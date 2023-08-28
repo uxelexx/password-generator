@@ -30,9 +30,12 @@ export default function GenHeader({ password }: PasswordProps) {
       >
         Copied!
       </span>
-      <p className="font-semibold text-2xl">{password}</p>
+      <p aria-label="password" className="font-semibold text-2xl">
+        {password}
+      </p>
       <button
         type="button"
+        aria-label="Copy password to clipboard"
         className="cursor-pointer text-neutral-200 text-opacity-70 hover:text-opacity-100 active:scale-95"
         onClick={handleCopy}
       >
