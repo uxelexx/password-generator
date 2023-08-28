@@ -1,10 +1,10 @@
+import GeneratorHeader from "./GeneratorHead";
 import GeneratorLayout from "./GeneratorLayout";
-import Password from "./Password";
 
 export default function Generator() {
   return (
     <GeneratorLayout>
-      <Password password="passwordlong%#" />
+      <GeneratorHeader password="passwordlong%#" />
     </GeneratorLayout>
   );
 }
