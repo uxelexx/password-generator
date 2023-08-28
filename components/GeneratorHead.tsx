@@ -1,13 +1,11 @@
-"use client";
-
-import { useRef } from "react";
+import React from "react";
 
 type PasswordProps = {
   password: string;
 };
 
 export default function GenHeader({ password }: PasswordProps) {
-  const ref = useRef<HTMLSpanElement>(null);
+  const ref = React.useRef<HTMLSpanElement>(null);
   let timer: ReturnType<typeof setTimeout> | null = null;
 
   function handleCopy() {
@@ -25,7 +23,7 @@ export default function GenHeader({ password }: PasswordProps) {
   }
 
   return (
-    <div className="text-neural-300 relative p-6 bg-zinc-700/80 w-full flex justify-between items-center">
+    <div className="text-neural-300 relative p-6 h-20 bg-zinc-700/80 w-full flex justify-between items-center">
       <span
         ref={ref}
         className="text-emerald-300 absolute right-0 -top-6 hidden duration-150 ease-out"
