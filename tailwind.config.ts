@@ -12,6 +12,7 @@ const config = {
       colors: {
         "bg-start": "#17151e",
         "bg-end": "#09080C",
+        primary: "#A4FFAF",
       },
       keyframes: {
         "fade-out-up": {
