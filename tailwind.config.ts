@@ -8,7 +8,12 @@ const config = {
   ],
 
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        "bg-start": "#17151e",
+        "bg-end": "#09080C",
+      },
+    },
   },
 
   plugins: [],
