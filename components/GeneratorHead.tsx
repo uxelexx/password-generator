@@ -35,13 +35,13 @@ export default function GenHeader({ password }: PasswordProps) {
         placeholder="P4$5W0rD!"
         aria-label="password"
         disabled
-        className="font-semibold text-2xl bg-transparent placeholder:text-neutral-200/50"
+        className="font-semibold text-2xl bg-transparent placeholder:text-neutral-100/50"
       />
 
       <button
         type="button"
         aria-label="Copy password to clipboard"
-        className="cursor-pointer text-primary hover:text-neutral-200 active:scale-95"
+        className="cursor-pointer text-primary hover:text-neutral-100 active:scale-95"
         onClick={handleCopy}
       >
         <CopyIcon />

@@ -24,7 +24,7 @@ export function StrengthColumn({ color, strength }: Props) {
           <div
             key={index}
             style={style}
-            className="w-[10px] border-2 border-neutral-200"
+            className="w-[10px] border-2 border-neutral-100"
           ></div>
         );
       })}
