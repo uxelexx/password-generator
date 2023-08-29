@@ -29,7 +29,7 @@ export default function CharRange({ ...props }: Props) {
         ref={inputRef}
         className="w-full mt-5 h-2 cursor-pointer appearance-none"
         step="1"
-        min="1"
+        min="0"
         max="20"
       />
     </>
