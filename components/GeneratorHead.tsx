@@ -30,9 +30,14 @@ export default function GenHeader({ password }: PasswordProps) {
       >
         Copied!
       </span>
-      <p aria-label="password" className="font-semibold text-2xl">
-        {password}
-      </p>
+      <input
+        value={password}
+        placeholder="P4$5W0rD!"
+        aria-label="password"
+        disabled
+        className="font-semibold text-2xl bg-transparent placeholder:text-neutral-200/50"
+      />
+
       <button
         type="button"
         aria-label="Copy password to clipboard"
