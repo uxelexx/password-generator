@@ -27,7 +27,7 @@ export default function GeneratorCheckbox({ children, ...props }: Props) {
           <polyline points="20 6 9 17 4 12"></polyline>
         </svg>
       </div>
-      <label htmlFor={props.name} className="text-lg capitalize">
+      <label htmlFor={props.name} className="text-lg capitalize cursor-pointer">
         {children}
       </label>
     </div>
