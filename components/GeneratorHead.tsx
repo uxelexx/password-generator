@@ -41,7 +41,7 @@ export default function GenHeader({ password }: PasswordProps) {
       <button
         type="button"
         aria-label="Copy password to clipboard"
-        className="cursor-pointer text-neutral-200 text-opacity-70 hover:text-opacity-100 active:scale-95"
+        className="cursor-pointer text-primary hover:text-neutral-200 active:scale-95"
         onClick={handleCopy}
       >
         <CopyIcon />
