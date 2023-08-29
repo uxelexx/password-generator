@@ -15,7 +15,7 @@
   input[type="range"] {
     @apply bg-bg-start;
     background-image: linear-gradient(#a4ffaf, #a4ffaf);
-    background-size: 30% 100%;
+    background-size: 0% 100%;
     background-repeat: no-repeat;
   }
 }
