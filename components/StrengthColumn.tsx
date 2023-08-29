@@ -1,4 +1,5 @@
 const columns: Record<string, boolean[]> = {
+  " ": [false, false, false, false],
   "Too weak": [true, false, false, false],
   Weak: [true, true, false, false],
   Medium: [true, true, true, false],
