@@ -7,7 +7,7 @@ type Props = InputHTMLAttributes<HTMLInputElement> & {
 export default function GeneratorCheckbox({ children, ...props }: Props) {
   return (
     <div className="flex space-x-5 items-center relative mb-5">
-      <div className="grid place-items-center">
+      <div className="grid place-items-center h-7">
         <input
           id={props.name}
           className="peer cursor-pointer shrink-0 checked:bg-primary h-5 w-5 bg-transparent appearance-none border-2 border-neutral-100 hover:border-primary"
@@ -27,7 +27,10 @@ export default function GeneratorCheckbox({ children, ...props }: Props) {
           <polyline points="20 6 9 17 4 12"></polyline>
         </svg>
       </div>
-      <label htmlFor={props.name} className="text-lg capitalize cursor-pointer">
+      <label
+        htmlFor={props.name}
+        className="sm:text-lg capitalize cursor-pointer "
+      >
         {children}
       </label>
     </div>

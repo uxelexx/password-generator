@@ -35,7 +35,7 @@ export default function GenHeader({ password }: PasswordProps) {
         placeholder="P4$5W0rD!"
         aria-label="password"
         disabled
-        className="font-semibold text-2xl bg-transparent placeholder:text-neutral-100/50"
+        className="font-semibold text-2xl bg-transparent placeholder:text-neutral-100/50 w-full"
       />
 
       <button
