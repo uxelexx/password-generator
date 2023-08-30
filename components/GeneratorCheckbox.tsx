@@ -10,7 +10,7 @@ export default function GeneratorCheckbox({ children, ...props }: Props) {
       <div className="grid place-items-center h-7">
         <input
           id={props.name}
-          className="peer cursor-pointer shrink-0 checked:bg-primary h-5 w-5 bg-transparent appearance-none border-2 border-neutral-100 hover:border-primary"
+          className="peer cursor-pointer shrink-0 checked:bg-primary h-5 w-5 bg-transparent appearance-none border-2 border-neutral-100 checked:border-primary hover:border-primary"
           {...props}
           type="checkbox"
         />
