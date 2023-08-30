@@ -15,3 +15,4 @@ pnpm dev
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 ## [Frontend Mentor](https://www.frontendmentor.io/challenges/password-generator-app-Mr8CLycqjh) Challenge
+![image](https://github.com/uxelexx/password-generator/assets/101667706/4e496dbb-7758-47e5-95e8-0aedd7f04ab1)
